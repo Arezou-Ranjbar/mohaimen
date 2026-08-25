@@ -1,6 +1,58 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: Vazir;
+  src:
+    url("./assets/fonts/Vazir-Thin.woff2") format("woff2"),
+    url("./assets/fonts/Vazir-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazir;
+  src:
+    url("./assets/fonts/Vazir-Light.woff2") format("woff2"),
+    url("./assets/fonts/Vazir-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazir;
+  src:
+    url("./assets/fonts/Vazir.woff2") format("woff2"),
+    url("./assets/fonts/Vazir.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazir;
+  src:
+    url("./assets/fonts/Vazir-Medium.woff2") format("woff2"),
+    url("./assets/fonts/Vazir-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazir;
+  src:
+    url("./assets/fonts/Vazir-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Vazir-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
+  --font-sans: Vazir, ui-sans-serif, system-ui, sans-serif;
+
   --color-primary-50: #46de87;
   --color-primary-100: #37d87b;
   --color-primary-200: #29d270;
@@ -90,6 +142,7 @@
 
 body {
   margin: 0;
+  font-family: Vazir, ui-sans-serif, system-ui, sans-serif;
   background: var(--background);
   color: var(--foreground);
 }
