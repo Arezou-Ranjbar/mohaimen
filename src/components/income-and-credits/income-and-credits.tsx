@@ -5,19 +5,19 @@ const creditChart = [20, 24, 18, 26, 22, 30, 27, 33, 29, 35, 31, 38]
 
 export default function IncomeAndCredits() {
   return (
-    <section className="flex h-full flex-col gap-4 rounded-xl border border-border bg-surface-secondary p-4">
-      <h2 className="text-base text-right font-semibold text-foreground">
+    <section className="flex h-fit flex-col gap-2 rounded-xl border border-border bg-surface-secondary p-3">
+      <h2 className="text-sm font-semibold text-foreground">
         درآمد و اعتبارات
       </h2>
 
-      <div className="flex flex-1 flex-col  flex-col gap-3">
+      <div className="flex flex-col gap-2">
         <TrendMetricCard
           title="کل درآمد سالانه"
           value="۲۴,۰۰۰,۰۰۰,۰۰۰"
           unit="ریال"
           chartData={incomeChart}
           footerLeft={
-            <span className="inline-flex items-center  gap-1 font-medium">
+            <span className="inline-flex items-center gap-1 font-medium">
               <span aria-hidden="true">↑</span>
               ۱۲.۳ درصد
             </span>

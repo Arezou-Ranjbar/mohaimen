@@ -83,18 +83,18 @@ export default function TrendMetricCard({
   }
 
   return (
-    <div className="flex flex-col rounded-xl border border-border bg-surface p-4">
-      <p className="text-sm text-right text-muted">{title}</p>
-      <p className="mt-1 flex justify-end items-baseline gap-1 text-xl font-semibold text-foreground">
+    <div className="flex flex-col rounded-lg border border-border bg-surface p-3">
+      <p className="text-xs text-muted">{title}</p>
+      <p className="mt-0.5 flex items-baseline gap-1 text-base font-semibold text-foreground">
         <span>{value}</span>
-        {unit ? <span className="text-sm font-medium text-muted">{unit}</span> : null}
+        {unit ? <span className="text-xs font-medium text-muted">{unit}</span> : null}
       </p>
 
-      <div className="mt-3 h-20 w-full">
+      <div className="mt-2 h-12 w-full">
         <Line data={data} options={chartOptions} />
       </div>
 
-      <div className="mt-3 flex items-center justify-between gap-2 text-sm">
+      <div className="mt-2 flex items-center justify-between gap-2 border-t border-border pt-2 text-xs">
         <div className="text-primary-500">{footerLeft}</div>
         <span className="text-muted">{footerRight}</span>
       </div>
