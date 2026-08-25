@@ -75,12 +75,12 @@
 }
 
 :root {
-  --background: #f6faf7;
+  --background: #f5f5f5;
   --foreground: #4d4d4d;
   --muted: #6c6c6c;
   --surface: #ffffff;
   --surface-elevated: #ffffff;
-  --border: #dcdcdc;
+  --border: #e5e5e5;
   --brand: #1f9f55;
   --brand-hover: #1c8e4c;
   --ring: #22b05e;
