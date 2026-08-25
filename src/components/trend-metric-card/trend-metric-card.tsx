@@ -84,8 +84,8 @@ export default function TrendMetricCard({
 
   return (
     <div className="flex flex-col rounded-lg border border-border bg-surface p-3">
-      <p className="text-xs text-muted">{title}</p>
-      <p className="mt-0.5 flex items-baseline gap-1 text-base font-semibold text-foreground">
+      <p className="text-xs text-right text-muted">{title}</p>
+      <p className="mt-0.5 flex items-baseline justify-end gap-1 text-base font-semibold text-foreground">
         <span>{value}</span>
         {unit ? <span className="text-xs font-medium text-muted">{unit}</span> : null}
       </p>
