@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import ActionCard from '../action-card/action-card'
 import Modal from '../modal/modal'
+import VehicleTaxCalculator from '../vehicle-tax-calculator/vehicle-tax-calculator'
 
 type ServiceKey = 'vehicle-tax' | 'self-declaration' | null
 
@@ -49,7 +50,13 @@ export default function ServiceActions() {
         open={activeService !== null}
         title={activeTitle}
         onClose={() => setActiveService(null)}
-      />
+      >
+        {activeService === 'vehicle-tax' ? (
+          <VehicleTaxCalculator />
+        ) : (
+          'محتوای این بخش به زودی اضافه می‌شود.'
+        )}
+      </Modal>
     </>
   )
 }
