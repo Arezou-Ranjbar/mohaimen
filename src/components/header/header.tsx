@@ -1,3 +1,7 @@
+type HeaderProps = {
+  onMenuToggle?: () => void
+}
+
 const headerImages = (
   <>
     <img
@@ -13,11 +17,21 @@ const headerImages = (
   </>
 )
 
-export default function Header() {
+export default function Header({ onMenuToggle }: HeaderProps) {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-50 bg-surface">
-        {headerImages}
+        <div className="relative">
+          {headerImages}
+          {onMenuToggle && (
+            <button
+              type="button"
+              aria-label="باز کردن منو"
+              onClick={onMenuToggle}
+              className="absolute inset-y-0 right-0 w-16 md:hidden"
+            />
+          )}
+        </div>
       </header>
       <div className="invisible" aria-hidden="true">
         {headerImages}
