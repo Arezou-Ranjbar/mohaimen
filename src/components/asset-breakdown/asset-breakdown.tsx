@@ -37,7 +37,7 @@ const chartOptions: ChartOptions<'doughnut'> = {
 
 export default function AssetBreakdown() {
   return (
-    <section className="flex h-full flex-col rounded-xl border border-border bg-surface p-4">
+    <section className="flex h-full flex-col rounded-xl border border-border bg-surface-secondary p-4">
       <h2 className="mb-4 text-base font-semibold text-right text-foreground">
         تفکیک دارایی‌ها
       </h2>

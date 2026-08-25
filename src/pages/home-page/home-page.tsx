@@ -4,7 +4,7 @@ import IncomeAndCredits from '../../components/income-and-credits/income-and-cre
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4  ">
       <EconomicStatusSummary />
 
       <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">

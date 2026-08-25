@@ -41,7 +41,7 @@ const cards: Card[] = [
 
 export default function EconomicStatusSummary() {
   return (
-    <section className="rounded-xl border border-border bg-surface p-4">
+    <section className="rounded-xl border border-border bg-surface-secondary p-4">
       <header className="mb-4 flex items-start justify-between gap-3">
       <img
           src="/info-information-circle.svg"

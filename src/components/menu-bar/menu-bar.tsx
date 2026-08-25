@@ -7,7 +7,7 @@ type MenuBarProps = {
 
 export default function MenuBar({ onNavigate }: MenuBarProps) {
   return (
-    <nav className="flex h-full min-h-0 w-full flex-col gap-2 rounded-xl border border-border bg-surface p-3 shadow-sm">
+    <nav className="flex h-full min-h-0 w-full flex-col gap-2 rounded-xl border border-border bg-surface-secondary p-3 shadow-sm">
       <div className="flex items-center gap-2 border-b border-border pb-3">
       
         <div className="min-w-0 flex-1 text-right">
