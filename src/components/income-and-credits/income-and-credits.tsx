@@ -5,12 +5,12 @@ const creditChart = [20, 24, 18, 26, 22, 30, 27, 33, 29, 35, 31, 38]
 
 export default function IncomeAndCredits() {
   return (
-    <section className="flex h-fit flex-col gap-2 rounded-xl border border-border bg-surface-secondary p-3">
-      <h2 className="text-sm text-right font-semibold text-foreground">
+    <section className="flex h-full min-h-0 min-w-0 flex-col gap-3 overflow-hidden rounded-xl border border-border bg-surface-secondary p-3">
+      <h2 className="shrink-0 text-sm text-right font-semibold text-foreground">
         درآمد و اعتبارات
       </h2>
 
-      <div className="flex flex-col gap-2">
+      <div className="flex min-h-0 min-w-0 flex-1 flex-col gap-2">
         <TrendMetricCard
           title="کل درآمد سالانه"
           value="۲۴,۰۰۰,۰۰۰,۰۰۰"

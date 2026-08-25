@@ -83,20 +83,22 @@ export default function TrendMetricCard({
   }
 
   return (
-    <div className="flex flex-col rounded-lg border border-border bg-surface p-3">
-      <p className="text-xs text-right text-muted">{title}</p>
-      <p className="mt-0.5 flex items-baseline justify-end gap-1 text-base font-semibold text-foreground">
-        <span>{value}</span>
-        {unit ? <span className="text-xs font-medium text-muted">{unit}</span> : null}
+    <div className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden rounded-lg border border-border bg-surface p-3">
+      <p className="shrink-0 text-xs text-right text-muted">{title}</p>
+      <p className="mt-0.5 flex shrink-0 items-baseline justify-end gap-1 text-base font-semibold text-foreground">
+        <span className="truncate">{value}</span>
+        {unit ? (
+          <span className="shrink-0 text-xs font-medium text-muted">{unit}</span>
+        ) : null}
       </p>
 
-      <div className="mt-2 h-12 w-full">
+      <div className="mt-2 min-h-12 w-full min-w-0 flex-1">
         <Line data={data} options={chartOptions} />
       </div>
 
-      <div className="mt-2 flex items-center justify-between gap-2 border-t border-border pt-2 text-xs">
-        <div className="text-primary-500">{footerLeft}</div>
-        <span className="text-muted">{footerRight}</span>
+      <div className="mt-2 flex min-w-0 shrink-0 items-center justify-between gap-2 border-t border-border pt-2 text-xs">
+        <div className="min-w-0 truncate text-primary-500">{footerLeft}</div>
+        <span className="shrink-0 text-muted">{footerRight}</span>
       </div>
     </div>
   )

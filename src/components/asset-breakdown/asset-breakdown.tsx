@@ -27,7 +27,7 @@ const chartData: ChartData<'doughnut'> = {
 
 const chartOptions: ChartOptions<'doughnut'> = {
   responsive: true,
-  maintainAspectRatio: true,
+  maintainAspectRatio: false,
   cutout: '72%',
   plugins: {
     legend: { display: false },
@@ -37,23 +37,23 @@ const chartOptions: ChartOptions<'doughnut'> = {
 
 export default function AssetBreakdown() {
   return (
-    <section className="flex h-full flex-col rounded-xl border border-border bg-surface-secondary p-4">
-      <h2 className="mb-4 text-base font-semibold text-right text-foreground">
+    <section className="flex h-full min-h-0 min-w-0 flex-col overflow-hidden rounded-xl border border-border bg-surface-secondary p-4">
+      <h2 className="mb-4 shrink-0 text-base font-semibold text-right text-foreground">
         تفکیک دارایی‌ها
       </h2>
 
-      <div className="flex min-h-0 flex-1 flex-col gap-4 lg:flex-row lg:items-stretch">
-        <div className="relative mx-auto h-52 w-52 shrink-0">
+      <div className="flex min-h-0 min-w-0 flex-1 flex-col gap-4 lg:flex-row lg:items-stretch">
+        <div className="relative mx-auto aspect-square w-full max-w-[13rem] shrink-0 lg:mx-0 lg:h-full lg:max-h-full lg:w-auto lg:max-w-[40%] lg:self-center lg:aspect-square">
           <Doughnut data={chartData} options={chartOptions} />
-          <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center text-center">
-            <p className="text-lg font-semibold text-foreground">
+          <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-3 text-center">
+            <p className="text-base font-semibold text-foreground">
               {totalAssetsValue}
             </p>
             <p className="mt-1 text-xs text-muted">ارزش کل دارایی‌ها</p>
           </div>
         </div>
 
-        <div className="flex min-w-0 flex-1 flex-col justify-center gap-2 lg:h-52 lg:flex-none lg:basis-[min(100%,18rem)]">
+        <div className="flex min-h-0 min-w-0 flex-1 flex-col gap-2 py-1">
           {assets.map((asset) => (
             <AssetShareCard
               key={asset.label}
@@ -69,7 +69,7 @@ export default function AssetBreakdown() {
 
       <Link
         to="/assets-status"
-        className="mt-4 flex h-10 items-center justify-center rounded-lg bg-primary-500/10 text-sm font-medium text-primary-500 transition-colors hover:bg-primary-500/15"
+        className="mt-4 flex h-10 shrink-0 items-center justify-center rounded-lg bg-primary-500/10 text-sm font-medium text-primary-500 transition-colors hover:bg-primary-500/15"
       >
         جزئیات کامل دارایی‌ها
       </Link>
