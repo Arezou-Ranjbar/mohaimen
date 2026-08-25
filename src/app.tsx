@@ -10,6 +10,13 @@ import IdentityInformation from './pages/identity-information/identity-informati
 import IncomeStatus from './pages/income-status/income-status'
 import MonetaryAndCredit from './pages/monetary-and-credit/monetary-and-credit'
 import PaymentAndRefund from './pages/payment-and-refund/payment-and-refund'
+import EmptyHouse from './pages/tax-services/empty-house/empty-house'
+import ExitFee from './pages/tax-services/exit-fee/exit-fee'
+import Inheritance from './pages/tax-services/inheritance/inheritance'
+import LuxuryHouse from './pages/tax-services/luxury-house/luxury-house'
+import RentalProperty from './pages/tax-services/rental-property/rental-property'
+import TaxServicesPage from './pages/tax-services/tax-services'
+import VehicleTax from './pages/tax-services/vehicle-tax/vehicle-tax'
 import Transactions from './pages/transactions/transactions'
 
 function AppLayout() {
@@ -22,7 +29,7 @@ function AppLayout() {
     <div className="flex h-svh flex-col overflow-hidden">
       <Header onMenuToggle={toggleMenu} />
 
-      <div className="flex min-h-0 flex-1 pb-8 px-4">
+      <div className="flex min-h-0 flex-1 px-4 pb-8">
         <main className="min-w-0 flex-1 overflow-y-auto p-2">
           <Outlet />
         </main>
@@ -63,6 +70,16 @@ export default function App() {
         <Route path="/accounting-system" element={<AccountingSystem />} />
         <Route path="/payment-and-refund" element={<PaymentAndRefund />} />
         <Route path="/transactions" element={<Transactions />} />
+        <Route path="/tax-services" element={<TaxServicesPage />} />
+        <Route
+          path="/tax-services/rental-property"
+          element={<RentalProperty />}
+        />
+        <Route path="/tax-services/empty-house" element={<EmptyHouse />} />
+        <Route path="/tax-services/luxury-house" element={<LuxuryHouse />} />
+        <Route path="/tax-services/inheritance" element={<Inheritance />} />
+        <Route path="/tax-services/vehicle-tax" element={<VehicleTax />} />
+        <Route path="/tax-services/exit-fee" element={<ExitFee />} />
       </Route>
     </Routes>
   )
