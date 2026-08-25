@@ -5,7 +5,7 @@ const creditChart = [20, 24, 18, 26, 22, 30, 27, 33, 29, 35, 31, 38]
 
 export default function IncomeAndCredits() {
   return (
-    <section className="flex h-full min-h-0 min-w-0 flex-col gap-3 overflow-hidden rounded-xl border border-border bg-surface-secondary p-3">
+    <section className="flex min-h-0 min-w-0 flex-col gap-3 rounded-xl border border-border bg-surface-secondary p-3 xl:h-full xl:max-h-[25rem] xl:overflow-hidden">
       <h2 className="shrink-0 text-sm text-right font-semibold text-foreground">
         درآمد و اعتبارات
       </h2>

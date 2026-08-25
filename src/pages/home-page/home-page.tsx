@@ -7,11 +7,11 @@ export default function HomePage() {
     <div className="flex min-w-0 flex-col gap-4">
       <EconomicStatusSummary />
 
-      <div className="grid min-w-0 grid-cols-1 items-stretch gap-4 xl:h-[28.5rem] xl:max-h-[28.5rem] xl:grid-cols-2">
-        <div className="min-w-0 h-full">
+      <div className="grid min-w-0 grid-cols-1 items-stretch gap-4 xl:h-[25rem] xl:max-h-[25rem] xl:grid-cols-2">
+        <div className="min-w-0 xl:h-full">
           <AssetBreakdown />
         </div>
-        <div className="min-w-0 h-full">
+        <div className="min-w-0 xl:h-full">
           <IncomeAndCredits />
         </div>
       </div>
