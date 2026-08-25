@@ -1,6 +1,7 @@
 import AssetBreakdown from '../../components/asset-breakdown/asset-breakdown'
 import EconomicStatusSummary from '../../components/economic-status-summary/economic-status-summary'
 import IncomeAndCredits from '../../components/income-and-credits/income-and-credits'
+import ServiceActions from '../../components/service-actions/service-actions'
 
 export default function HomePage() {
   return (
@@ -15,6 +16,8 @@ export default function HomePage() {
           <IncomeAndCredits />
         </div>
       </div>
+
+      <ServiceActions />
     </div>
   )
 }
