@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #46de87;
+  --color-primary-100: #37d87b;
+  --color-primary-200: #29d270;
+  --color-primary-300: #26c167;
+  --color-primary-400: #22b05e;
+  --color-primary-500: #1f9f55;
+  --color-primary-600: #1c8e4c;
+  --color-primary-700: #187d43;
+  --color-primary-800: #156c3a;
+  --color-primary-900: #125b30;
+  --color-primary-950: #0e4a27;
+
+  --color-neutral-50: #b3b3b3;
+  --color-neutral-100: #a9a9a9;
+  --color-neutral-200: #9f9f9f;
+  --color-neutral-300: #949494;
+  --color-neutral-400: #8a8a8a;
+  --color-neutral-500: #808080;
+  --color-neutral-600: #767676;
+  --color-neutral-700: #6c6c6c;
+  --color-neutral-800: #616161;
+  --color-neutral-900: #575757;
+  --color-neutral-950: #4d4d4d;
+
+  --color-fresh-eggplant-50: #de4699;
+  --color-fresh-eggplant-100: #d83784;
+  --color-fresh-eggplant-200: #d2296f;
+  --color-fresh-eggplant-300: #c12666;
+  --color-fresh-eggplant-400: #b0225e;
+  --color-fresh-eggplant-500: #9f1f55;
+  --color-fresh-eggplant-600: #8e1c4b;
+  --color-fresh-eggplant-700: #7d1842;
+  --color-fresh-eggplant-800: #6c1539;
+  --color-fresh-eggplant-900: #5b1230;
+  --color-fresh-eggplant-950: #4a0e27;
+
+  --color-klein-blue-50: #4654de;
+  --color-klein-blue-100: #3744d8;
+  --color-klein-blue-200: #2938d2;
+  --color-klein-blue-300: #2633c1;
+  --color-klein-blue-400: #222eb0;
+  --color-klein-blue-500: #1f2a9f;
+  --color-klein-blue-600: #1c258e;
+  --color-klein-blue-700: #18207d;
+  --color-klein-blue-800: #151c6c;
+  --color-klein-blue-900: #12175b;
+  --color-klein-blue-950: #0e134a;
+
+  --color-lemon-ginger-50: #ded346;
+  --color-lemon-ginger-100: #d8cc37;
+  --color-lemon-ginger-200: #d2c529;
+  --color-lemon-ginger-300: #c1b526;
+  --color-lemon-ginger-400: #b0a522;
+  --color-lemon-ginger-500: #9f951f;
+  --color-lemon-ginger-600: #8e851c;
+  --color-lemon-ginger-700: #7d7518;
+  --color-lemon-ginger-800: #6c6515;
+  --color-lemon-ginger-900: #5b5512;
+  --color-lemon-ginger-950: #4a450e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-border: var(--border);
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --background: #f6faf7;
+  --foreground: #4d4d4d;
+  --muted: #6c6c6c;
+  --surface: #ffffff;
+  --surface-elevated: #ffffff;
+  --border: #dcdcdc;
+  --brand: #1f9f55;
+  --brand-hover: #1c8e4c;
+  --ring: #22b05e;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+}
