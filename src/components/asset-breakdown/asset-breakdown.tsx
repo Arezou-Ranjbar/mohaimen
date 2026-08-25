@@ -42,7 +42,7 @@ export default function AssetBreakdown() {
         تفکیک دارایی‌ها
       </h2>
 
-      <div className="flex min-h-0 flex-1 flex-col gap-4 lg:flex-row lg:items-center">
+      <div className="flex min-h-0 flex-1 flex-col gap-4 lg:flex-row lg:items-stretch">
         <div className="relative mx-auto h-52 w-52 shrink-0">
           <Doughnut data={chartData} options={chartOptions} />
           <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center text-center">
@@ -53,7 +53,7 @@ export default function AssetBreakdown() {
           </div>
         </div>
 
-        <div className="flex min-w-0 flex-1 flex-col gap-2">
+        <div className="flex min-w-0 flex-1 flex-col justify-center gap-2 lg:h-52 lg:flex-none lg:basis-[min(100%,18rem)]">
           {assets.map((asset) => (
             <AssetShareCard
               key={asset.label}

@@ -22,7 +22,7 @@ function AppLayout() {
     <div className="flex h-svh flex-col overflow-hidden">
       <Header onMenuToggle={toggleMenu} />
 
-      <div className="flex min-h-0 flex-1 pb-8">
+      <div className="flex min-h-0 flex-1 pb-8 px-4">
         <main className="min-w-0 flex-1 overflow-y-auto p-2">
           <Outlet />
         </main>

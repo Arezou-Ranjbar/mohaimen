@@ -14,8 +14,8 @@ export default function AssetShareCard({
   color,
 }: AssetShareCardProps) {
   return (
-    <div className="flex items-center gap-3 rounded-lg border border-border bg-surface p-3">
-    
+    <div className="flex min-h-16 flex-1 items-center gap-3 rounded-lg border border-border bg-surface px-3 py-2.5 shadow-sm">
+     
       <div className="min-w-0 flex-1">
         <div className="flex items-center justify-between gap-2">
          
@@ -25,7 +25,7 @@ export default function AssetShareCard({
           <span className="truncate text-sm text-muted">{label}</span>
         </div>
         <div className="mt-1 flex justify-end items-center gap-2">
-         
+          
           <span className="truncate text-xs text-muted">{shareLabel}</span>
           <span
             className="h-2 w-2 shrink-0 rounded-full"
